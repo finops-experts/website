@@ -1,0 +1,212 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1FA94A;
+    --secondary-color: #002E0E;
+    --text: #262626;
+    --grey: #888888;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--grey);
+}
+
+p,
+a {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.logo {
+    width: 184px;
+    height: 38.58px;
+}
+
+.container {
+    max-width: 1140px;
+    padding: auto 150px;
+    margin: auto;
+    display: flex;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 5px 0px;
+}
+
+header .container {
+    justify-content: center;
+    color: white;
+}
+
+nav .container {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 10px;
+    transform: 300ms;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav button {
+    background: none;
+    border: 2px solid var(--secondary-color);
+}
+
+#hero {
+    background: linear-gradient(90deg, #1FA94A 53.94%, rgba(31, 169, 74, 0) 89.68%), url(/images/austin-distel-jpHw8ndwJ_Q-unsplash.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero-bg div {
+    flex-direction: column;
+    max-width: 922px;
+    padding: 143px 0px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-bg button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#tabs {
+    margin-top: 20px;
+}
+
+#tabs .container {
+    flex-direction: column;
+    border: solid 5px var(--secondary-color);
+    border-radius: 20px;
+}
+
+#tabs .container .buttons {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px;
+    margin-top: -100px;
+}
+
+#tabs button {
+    width: 100%;
+    background-color: white;
+}
+
+#tabs .active {
+    background-color: var(--secondary-color);
+}
+
+#tabs .active h2 {
+    color: white;
+}
+
+#tabs .active path {
+    fill: #ffffff;
+}
+
+#tabs button p {
+    display: none;
+}
+
+#tabs P:last-of-type {
+    padding: 50px;
+}
+
+#client-logo .container {
+    gap: 100px;
+    padding: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sale {
+    background-color: var(--primary-color);
+}
+
+#sale .container>div {
+    width: 100%;
+}
+
+#sale .container>div:first-of-type {
+    background-color: #65C483;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#sale .container>div:last-of-type {
+    padding: 50px 20px;
+    background-color: #AFEDC2;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sale button {
+    background-color: var(--secondary-color);
+    color: white;
+}

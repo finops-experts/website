@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinOps-Expert</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <header>
         <div class="container">
             <p><span>FREE</span> AWS Resource Report</p>
         </div>
+    </header>
+    <nav>
         <div class="container">
-            <img src="/images/logo.png" alt="logo">
+            <img class="logo" src="/images/logo.png" alt="logo">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">What We Do</a></li>
@@ -26,15 +32,20 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section id="hero">
         <div class="container hero-bg">
-            <h1>Optimize Cloud Costs, Drive Business Growth.</h1>
-            <p>Reimagine your cloud future. Optimize your cloud costs. Drive business growth. With our expert FinOps solutions, you can unlock the full potential of your cloud investment and achieve significant cost savings.</p>
-            <button>Contact Us</button>
+            <div>
+                <h1>Optimize Cloud Costs, Drive Business Growth.</h1>
+                <p>Reimagine your cloud future. Optimize your cloud costs. Drive business growth. With our expert FinOps solutions, you can unlock the full potential of your cloud investment and achieve significant cost savings.</p>
+                <button>Contact Us</button>
+            </div>
         </div>
+    </section>
+
+    <section id="tabs">
         <div class="container">
             <div class="buttons">
-                <button id="info">
+                <button class="active" id="info">
                     <svg width="91" height="90" viewBox="0 0 91 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M45.6545 0C20.8008 0 0.654541 20.1463 0.654541 45C0.654541 69.8537 20.8008 90 45.6545 90C70.5082 90 90.6545 69.8537 90.6545 45C90.6545 20.1463 70.5082 0 45.6545 0ZM45.6545 17.6087C48.8965 17.6087 51.5241 20.2363 51.5241 23.4783C51.5241 26.7202 48.8965 29.3478 45.6545 29.3478C42.4126 29.3478 39.785 26.7202 39.785 23.4783C39.785 20.2363 42.4126 17.6087 45.6545 17.6087ZM53.4806 70.4348H49.5676H41.7415H37.8285V66.5217H41.7415V41.087H37.8285V37.1739H41.7415H49.5676V41.087V66.5217H53.4806V70.4348Z" fill="white"/>
                     </svg>
@@ -45,7 +56,7 @@
                     </p>
                 </button>
 
-                <button id="optimization">
+                <button class="" id="optimization">
                     <svg width="76" height="70" viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.4746 0C17.578 0 16.8467 0.731287 16.8467 1.62791C16.8467 2.52453 17.578 3.25581 18.4746 3.25581H29.1578L1.02551 31.3881C0.389609 32.024 0.389609 33.0923 1.02551 33.7282C1.34346 34.0461 1.77587 34.186 2.19557 34.186C2.61526 34.186 3.04768 34.0461 3.36563 33.7282L31.4979 5.59593V16.2791C31.4979 17.1757 32.2292 17.907 33.1258 17.907C34.0224 17.907 34.7537 17.1757 34.7537 16.2791V0H18.4746ZM52.6607 6.51163V70H75.4514V6.51163H52.6607ZM26.6142 27.6744V70H49.4049V27.6744H26.6142ZM0.567661 45.5814V70H23.3584V45.5814H0.567661Z" fill="#888888"/>
                     </svg>                        
@@ -75,7 +86,7 @@
         </div>
     </section>
 
-    <section class="client-logo">
+    <section id="client-logo">
         <div class="container">
             <img src="/images/cl1.svg" alt="">
             <img src="/images/cl2.svg" alt="">
@@ -85,7 +96,7 @@
         </div>
     </section>
 
-    <section class="sale">
+    <section id="sale">
         <div class="container">
             <div>
                 <img src="/images/sale.svg" alt="sales">
@@ -101,7 +112,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services">
         <div class="container">
             <div>
                 <div class="heading">
@@ -117,7 +128,7 @@
         </div>
     </section>
 
-    <section class="how">
+    <section id="how">
         <div class="container">
             <div class="heading">
                 <h4>How We Do It</h4>
@@ -171,7 +182,7 @@
         </div>
     </section>
 
-    <section class="benefits">
+    <section id="benefits">
         <div class="container">
             <div class="heading">
                 <h4>Benefits</h4>
@@ -192,7 +203,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about">
         <div class="container">
             <div class="heading">
                 <h4>Who We Are</h4>
@@ -250,7 +261,7 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials">
         <div class="container">
             <div class="heading">
                 <h4>Testimonials</h4>
@@ -274,18 +285,37 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section id="faq">
         <div class="container">
             <h2>Frequently asked questions</h2>
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact">
         <div class="container">
             <img src="/images/logo.png" alt="logo">
-
+            <iframe src="https://forms.zohopublic.com/seanfinops1/form/ContactUs/formperma/0_sU0byohmht4_6egronBHbAfXNd3WHMBJHhfdrC7jI" frameborder="0"></iframe>
+            <div>
+                <p>You can also reach out to us directly.</p>
+                <p>Sales: sales@finops-experts.com<br> Support: support@finops-experts.com</p>
+                <p>We look forward to helping you soon!</p>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2024 FinOps Experts</p>
+            <ul>
+                <li><a href="">Terms Of Service</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
