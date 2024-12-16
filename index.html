@@ -20,7 +20,7 @@
     <nav>
         <div class="container">
             <a href="#"><img class="logo" src="/images/logo.png" alt="logo"></a>
-            <ul>
+            <ul id="ham-menu" class="">
                 <li><a href="#">Home</a></li>
                 <li><a href="#services">What We Do</a></li>
                 <li><a href="#how">How We Do It</a></li>
@@ -29,6 +29,10 @@
             </ul>
 
             <a href="#contact"><button href="#contact">Contact Us</button></a>
+            <svg id="hamburger" onclick="hamburger" class="hamburger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 8.99999C5.73497 8.99624 5.47185 9.0452 5.22591 9.14403C4.97997 9.24286 4.75613 9.38958 4.56739 9.57567C4.37865 9.76176 4.22878 9.9835 4.12649 10.228C4.02419 10.4725 3.97151 10.7349 3.97151 11C3.97151 11.265 4.02419 11.5274 4.12649 11.772C4.22878 12.0165 4.37865 12.2382 4.56739 12.4243C4.75613 12.6104 4.97997 12.7571 5.22591 12.8559C5.47185 12.9548 5.73497 13.0037 6 13H42C42.265 13.0037 42.5281 12.9548 42.7741 12.8559C43.02 12.7571 43.2439 12.6104 43.4326 12.4243C43.6213 12.2382 43.7712 12.0165 43.8735 11.772C43.9758 11.5274 44.0285 11.265 44.0285 11C44.0285 10.7349 43.9758 10.4725 43.8735 10.228C43.7712 9.9835 43.6213 9.76176 43.4326 9.57567C43.2439 9.38958 43.02 9.24286 42.7741 9.14403C42.5281 9.0452 42.265 8.99624 42 8.99999H6ZM6 22C5.73497 21.9962 5.47185 22.0452 5.22591 22.144C4.97997 22.2429 4.75613 22.3896 4.56739 22.5757C4.37865 22.7618 4.22878 22.9835 4.12649 23.228C4.02419 23.4725 3.97151 23.7349 3.97151 24C3.97151 24.265 4.02419 24.5274 4.12649 24.772C4.22878 25.0165 4.37865 25.2382 4.56739 25.4243C4.75613 25.6104 4.97997 25.7571 5.22591 25.8559C5.47185 25.9548 5.73497 26.0037 6 26H42C42.265 26.0037 42.5281 25.9548 42.7741 25.8559C43.02 25.7571 43.2439 25.6104 43.4326 25.4243C43.6213 25.2382 43.7712 25.0165 43.8735 24.772C43.9758 24.5274 44.0285 24.265 44.0285 24C44.0285 23.7349 43.9758 23.4725 43.8735 23.228C43.7712 22.9835 43.6213 22.7618 43.4326 22.5757C43.2439 22.3896 43.02 22.2429 42.7741 22.144C42.5281 22.0452 42.265 21.9962 42 22H6ZM6 35C5.73497 34.9962 5.47185 35.0452 5.22591 35.144C4.97997 35.2429 4.75613 35.3896 4.56739 35.5757C4.37865 35.7618 4.22878 35.9835 4.12649 36.228C4.02419 36.4725 3.97151 36.7349 3.97151 37C3.97151 37.265 4.02419 37.5274 4.12649 37.772C4.22878 38.0165 4.37865 38.2382 4.56739 38.4243C4.75613 38.6104 4.97997 38.7571 5.22591 38.8559C5.47185 38.9548 5.73497 39.0037 6 39H42C42.265 39.0037 42.5281 38.9548 42.7741 38.8559C43.02 38.7571 43.2439 38.6104 43.4326 38.4243C43.6213 38.2382 43.7712 38.0165 43.8735 37.772C43.9758 37.5274 44.0285 37.265 44.0285 37C44.0285 36.7349 43.9758 36.4725 43.8735 36.228C43.7712 35.9835 43.6213 35.7618 43.4326 35.5757C43.2439 35.3896 43.02 35.2429 42.7741 35.144C42.5281 35.0452 42.265 34.9962 42 35H6Z" fill="#002E0E"/>
+            </svg>
+
         </div>
     </nav>
 
@@ -37,7 +41,7 @@
             <div>
                 <h1>Optimize Cloud Costs, Drive Business Growth.</h1>
                 <p>Reimagine your cloud future. Optimize your cloud costs. Drive business growth. With our expert FinOps solutions, you can unlock the full potential of your cloud investment and achieve significant cost savings.</p>
-                <button>Contact Us</button>
+                <a href="#contact"><button>Contact Us</button></a>
             </div>
         </div>
     </section>
@@ -64,7 +68,7 @@
                     <p>We use over 50 strategies for saving you money<br><br> 
                         We offer options and recommendations for savings with actual dollar amounts<br><br>
                         Should you be paying upfront for EC2 instances? We'll tell you how much it would save.<br><br> 
-                        Which S3 storage class is best for a bucket? How much will it save?<br><br> 
+                        Which S3 storage class is best for a bucket? How much will it save?
                     </p>
                 </button>
 
@@ -76,11 +80,11 @@
                     <p>We train all the key stakeholders on the benefits of FinOps<br><br> 
                         We help you put the processes in place to continue to save<br><br> 
                         We follow up yearly to make sure your costs remain optimized<br><br> 
-                        We offer ongoing support on your FinOps journey.<br><br> 
+                        We offer ongoing support on your FinOps journey.
                     </p>
                 </button>
             </div>
-            <p>We analyze 40+ AWS services for resource level data<br><br> We roll up this data so you understand not just the EC2 costs for a group of servers, but the volumes and backups as well<br><br> We deliver an Excel or Google Sheets report explaining
+            <p id="tab-p">We analyze 40+ AWS services for resource level data<br><br> We roll up this data so you understand not just the EC2 costs for a group of servers, but the volumes and backups as well<br><br> We deliver an Excel or Google Sheets report explaining
                 where you spend your money
             </p>
         </div>
