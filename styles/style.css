@@ -9,6 +9,7 @@
     --secondary-color: #002E0E;
     --text: #262626;
     --grey: #888888;
+    --cream-background: #FBF6EA;
 }
 
 h1 {
@@ -28,7 +29,6 @@ h2 {
     font-size: 32px;
     line-height: 39px;
     text-transform: capitalize;
-    color: #000000;
 }
 
 h4 {
@@ -41,11 +41,13 @@ h4 {
 }
 
 p,
-a {
+a,
+li {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    line-height: 150%;
 }
 
 button {
@@ -206,7 +208,8 @@ nav button {
     flex-direction: column;
 }
 
-#sale button {
+#sale button,
+#services button {
     background-color: var(--primary-color);
     color: white;
 }
@@ -223,4 +226,243 @@ nav button {
     flex-direction: column;
     gap: 20px;
     padding: 50px 0px;
+}
+
+#services img {
+    max-width: 440px;
+    max-height: 100%;
+}
+
+#services div:has(>img) {
+    align-items: center;
+}
+
+#how {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#how h4 {
+    color: white;
+}
+
+#how .container {
+    padding: 100px 0px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#how .heading {
+    text-align: center;
+}
+
+#how .container>div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#how .container ol {
+    width: 100%;
+}
+
+#how .container div:has(>img) {
+    overflow: hidden;
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%;
+}
+
+#how img {
+    width: 100%;
+    max-height: 100%;
+}
+
+#benefits {
+    padding: 150px;
+}
+
+#benefits .container {
+    flex-direction: column;
+    gap: 50px;
+}
+
+#benefits .container .heading {
+    text-align: center;
+    max-width: 736px;
+    margin: auto;
+}
+
+#benefits .container>div:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #ECECEC;
+    border: 10px solid var(--primary-color);
+    border-radius: 20px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+#benefits img {
+    margin-left: -20px;
+}
+
+#benefits ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: var(--primary-color);
+}
+
+#benefits li span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#about .container {
+    padding: 150px 0px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#about .heading {
+    text-align: center;
+    max-width: 672px;
+    margin: auto;
+}
+
+#about .founder,
+.cpo {
+    display: flex;
+    gap: 20px;
+}
+
+#about>div>div>img {
+    width: 366px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.founder>div,
+.cpo>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certs {
+    display: flex;
+    gap: 5px;
+}
+
+.certs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certs p {
+    font-size: 10px;
+    text-align: center;
+}
+
+#testimonials {
+    background-color: var(--primary-color);
+}
+
+#testimonials .heading {
+    max-width: 770px;
+}
+
+#testimonials .container {
+    padding: 100px 0px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+#testimonials h4 {
+    color: white;
+}
+
+div:has(>.testimonial) {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.testimonial img {
+    margin-top: auto;
+}
+
+#faq .container {
+    padding: 150px 0px;
+}
+
+#contact {
+    background-color: var(--cream-background);
+}
+
+#contact .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0px;
+}
+
+#contact iframe {
+    width: 100%;
+    height: 900px;
+}
+
+#contact div div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+footer .container {
+    padding: 10px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+footer a {
+    color: black;
+    padding: 5px;
 }
