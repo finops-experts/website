@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -29,6 +30,14 @@ h2 {
     font-size: 32px;
     line-height: 39px;
     text-transform: capitalize;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 h4 {
@@ -94,12 +103,13 @@ nav {
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 99;
 }
 
 nav .container {
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 
 nav ul {
@@ -432,6 +442,12 @@ div:has(>.testimonial) {
 
 #faq .container {
     padding: 150px 0px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#faq h2 {
+    text-align: center;
 }
 
 #contact {
@@ -659,3 +675,48 @@ footer a {
         gap: 20px;
     }
 }
+
+
+/* animation */
+
+.wow {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.wow.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+
+/*# sourceMappingURL=style.css.map */
