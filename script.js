@@ -1,3 +1,4 @@
+// for hamburger menu-------------------------
 let ham = document.getElementById('hamburger');
 ham.addEventListener('click', hamburger);
 
@@ -5,6 +6,9 @@ function hamburger() {
     document.getElementById('ham-menu').classList.toggle('active');
 }
 
+
+
+// for tabs section---------------------------
 let info = document.getElementById('info');
 let optimization = document.getElementById('optimization');
 let operation = document.getElementById('operation');
@@ -12,8 +16,6 @@ let operation = document.getElementById('operation');
 info.addEventListener('click', tabInfo);
 optimization.addEventListener('click', tabOptimization);
 operation.addEventListener('click', tabOperation);
-
-
 
 function tabInfo() {
     document.getElementById('tab-p').innerHTML = "We analyze 40+ AWS services for resource level data<br><br> We roll up this data so you understand not just the EC2 costs for a group of servers, but the volumes and backups as well <br><br> We deliver an Excel or Google Sheets report explaining where you spend your money.";
@@ -38,15 +40,25 @@ function tabOperation() {
 
 
 
+
+
+// for dropdown FAQ -----------------------------
 const boxes = document.getElementsByClassName('drop');
+for (const drop of boxes) {
+    drop.addEventListener('click', function removeActive() {
+        boxes.classList.remove('active');
+    })
+}
 
 for (const box of boxes) {
     box.addEventListener('click', function handleClick() {
-        box.classList.toggle('active');
+        this.classList.toggle('active');
     });
 }
 
 
+
+//for animation---------------------------------
 const intersectionCallback = (entries) => {
     for (const entry of entries) {
         if (entry.isIntersecting) {
