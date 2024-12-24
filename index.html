@@ -23,7 +23,7 @@
     <nav>
         <div class="container">
             <a href="#"><img class="logo" src="/images/logo.png" alt="logo"></a>
-            <ul id="ham-menu" class="">
+            <ul class="">
                 <li><a href="#">Home</a></li>
                 <li><a href="#services">What We Do</a></li>
                 <li><a href="#how">How We Do It</a></li>
@@ -38,6 +38,16 @@
 
         </div>
     </nav>
+
+    <section id="ham-menu">
+        <ul>
+            <li><a onclick="hideMenu()" href="#">Home</a></li>
+            <li><a onclick="hideMenu()" href="#services">What We Do</a></li>
+            <li><a onclick="hideMenu()" href="#how">How We Do It</a></li>
+            <li><a onclick="hideMenu()" href="#about">About Us</a></li>
+            <li><a onclick="hideMenu()" href="#testimonials">Testimonials</a></li>
+        </ul>
+    </section>
 
     <section id="hero">
         <div class="container hero-bg wow">
@@ -306,7 +316,7 @@
             <h2>Frequently asked questions</h2>
 
             <div class="dropdown">
-                <div class="wow drop active">
+                <div class="wow drop active" id="drop1">
                     <div>
                         <h3>What is FinOps?</h3>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -316,7 +326,7 @@
                     <p>FinOps, or Cloud Financial Management, is a collaborative practice that enables organizations to get maximum business value from their cloud investments. It involves bringing together finance, technology, and business teams to make
                         informed decisions about cloud spending.</p>
                 </div>
-                <div class="wow drop ">
+                <div class="wow drop " id="drop2">
                     <div>
                         <h3>Why is FinOps Important?</h3>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -331,7 +341,7 @@
                         <li> Accelerated Innovation: By optimizing costs and improving efficiency, FinOps frees up resources to invest in new projects and drive business growth.</li>
                     </ul>
                 </div>
-                <div class="wow drop">
+                <div class="wow drop" id="drop3">
                     <div>
                         <h3>Who Should Be Involved in FinOps?</h3>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,7 +355,7 @@
                         <li>Business: Responsible for setting business objectives and priorities.</li>
                     </ul>
                 </div>
-                <div class="wow drop">
+                <div class="wow drop" id="drop4">
                     <div>
                         <h3>What are the Key Principles of FinOps?</h3>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +370,7 @@
                         <li>Ownership and Accountability: Assign ownership of cloud costs to specific teams or individuals.</li>
                     </ul>
                 </div>
-                <div class="wow drop">
+                <div class="wow drop" id="drop5">
                     <div>
                         <h3>How Can I Get Started with FinOps?</h3>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -383,7 +393,8 @@
     <section id="contact">
         <div class="container">
             <img class="logo" src="/images/logo.png" alt="logo">
-            <iframe src="https://forms.zohopublic.com/seanfinops1/form/ContactUs/formperma/0_sU0byohmht4_6egronBHbAfXNd3WHMBJHhfdrC7jI" frameborder="0"></iframe>
+            <div id="zf_div_0_sU0byohmht4_6egronBHbAfXNd3WHMBJHhfdrC7jI"></div>
+
             <div class="wow">
                 <p>You can also reach out to us directly.</p>
                 <p>Sales: sales@finops-experts.com<br> Support: support@finops-experts.com</p>
