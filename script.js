@@ -94,7 +94,7 @@ for (const item of items) {
         f.src = 'https://forms.zohopublic.com/seanfinops1/form/ContactUs/formperma/0_sU0byohmht4_6egronBHbAfXNd3WHMBJHhfdrC7jI?zf_rszfm=1';
         f.style.border = "none";
         f.style.height = "993px";
-        f.style.width = "90%";
+        f.style.width = "100%";
         f.style.transition = "all 0.5s ease";
         f.setAttribute("aria-label", 'Contact\x20Us');
 
