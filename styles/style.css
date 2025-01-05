@@ -148,7 +148,7 @@ nav button {
 }
 
 #hero {
-    background: linear-gradient(90deg, #1FA94A 53.94%, rgba(31, 169, 74, 0) 89.68%), url(/images/austin-distel-jpHw8ndwJ_Q-unsplash.jpg);
+    background: linear-gradient(90deg, #1FA94A 53.94%, rgba(31, 169, 74, 0) 89.68%), url(../images/austin-distel-jpHw8ndwJ_Q-unsplash.jpg);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -235,6 +235,7 @@ nav button {
 
 #sale {
     margin-top: 50px;
+    scroll-margin-top: 100px;
     background-color: var(--primary-color);
 }
 
@@ -773,6 +774,69 @@ footer a {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
+
+/* Modals for TOS, Privacy and Cookies */
+/* Modal overlay (hidden by default) */
+.modal-overlay {
+  display: none; /* Hidden initially */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal inner container */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+/* Close button (X) */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* OK button (optional) */
+.ok-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1fa94a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ok-btn:hover {
+  background-color: #002e0e;
+}
+
+/* Style the links */
+a[data-file] {
+  margin-right: 15px;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a[data-file]:hover {
+  text-decoration: none;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

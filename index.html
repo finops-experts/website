@@ -5,418 +5,512 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinOps-Expert</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/dropdon.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dropdon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="#sale">
-                <p><span>FREE</span> AWS Resource Report</p>
+<header>
+    <div class="container">
+        <a href="#sale">
+            <p><span>FREE</span> AWS Resource Report</p>
+        </a>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <a href="#"><img class="logo" src="/images/logo.png" alt="logo"></a>
+        <ul class="">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">What We Do</a></li>
+            <li><a href="#how">How We Do It</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <a href="#contact">
+            <button href="#contact">Contact Us</button>
+        </a>
+        <svg id="hamburger" onclick="hamburger" class="hamburger" width="48" height="48" viewBox="0 0 48 48" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8.99999C5.73497 8.99624 5.47185 9.0452 5.22591 9.14403C4.97997 9.24286 4.75613 9.38958 4.56739 9.57567C4.37865 9.76176 4.22878 9.9835 4.12649 10.228C4.02419 10.4725 3.97151 10.7349 3.97151 11C3.97151 11.265 4.02419 11.5274 4.12649 11.772C4.22878 12.0165 4.37865 12.2382 4.56739 12.4243C4.75613 12.6104 4.97997 12.7571 5.22591 12.8559C5.47185 12.9548 5.73497 13.0037 6 13H42C42.265 13.0037 42.5281 12.9548 42.7741 12.8559C43.02 12.7571 43.2439 12.6104 43.4326 12.4243C43.6213 12.2382 43.7712 12.0165 43.8735 11.772C43.9758 11.5274 44.0285 11.265 44.0285 11C44.0285 10.7349 43.9758 10.4725 43.8735 10.228C43.7712 9.9835 43.6213 9.76176 43.4326 9.57567C43.2439 9.38958 43.02 9.24286 42.7741 9.14403C42.5281 9.0452 42.265 8.99624 42 8.99999H6ZM6 22C5.73497 21.9962 5.47185 22.0452 5.22591 22.144C4.97997 22.2429 4.75613 22.3896 4.56739 22.5757C4.37865 22.7618 4.22878 22.9835 4.12649 23.228C4.02419 23.4725 3.97151 23.7349 3.97151 24C3.97151 24.265 4.02419 24.5274 4.12649 24.772C4.22878 25.0165 4.37865 25.2382 4.56739 25.4243C4.75613 25.6104 4.97997 25.7571 5.22591 25.8559C5.47185 25.9548 5.73497 26.0037 6 26H42C42.265 26.0037 42.5281 25.9548 42.7741 25.8559C43.02 25.7571 43.2439 25.6104 43.4326 25.4243C43.6213 25.2382 43.7712 25.0165 43.8735 24.772C43.9758 24.5274 44.0285 24.265 44.0285 24C44.0285 23.7349 43.9758 23.4725 43.8735 23.228C43.7712 22.9835 43.6213 22.7618 43.4326 22.5757C43.2439 22.3896 43.02 22.2429 42.7741 22.144C42.5281 22.0452 42.265 21.9962 42 22H6ZM6 35C5.73497 34.9962 5.47185 35.0452 5.22591 35.144C4.97997 35.2429 4.75613 35.3896 4.56739 35.5757C4.37865 35.7618 4.22878 35.9835 4.12649 36.228C4.02419 36.4725 3.97151 36.7349 3.97151 37C3.97151 37.265 4.02419 37.5274 4.12649 37.772C4.22878 38.0165 4.37865 38.2382 4.56739 38.4243C4.75613 38.6104 4.97997 38.7571 5.22591 38.8559C5.47185 38.9548 5.73497 39.0037 6 39H42C42.265 39.0037 42.5281 38.9548 42.7741 38.8559C43.02 38.7571 43.2439 38.6104 43.4326 38.4243C43.6213 38.2382 43.7712 38.0165 43.8735 37.772C43.9758 37.5274 44.0285 37.265 44.0285 37C44.0285 36.7349 43.9758 36.4725 43.8735 36.228C43.7712 35.9835 43.6213 35.7618 43.4326 35.5757C43.2439 35.3896 43.02 35.2429 42.7741 35.144C42.5281 35.0452 42.265 34.9962 42 35H6Z"
+                  fill="#002E0E"/>
+        </svg>
+
+    </div>
+</nav>
+
+<section id="ham-menu">
+    <ul>
+        <li><a onclick="hideMenu()" href="#">Home</a></li>
+        <li><a onclick="hideMenu()" href="#services">What We Do</a></li>
+        <li><a onclick="hideMenu()" href="#how">How We Do It</a></li>
+        <li><a onclick="hideMenu()" href="#about">About Us</a></li>
+        <li><a onclick="hideMenu()" href="#FAQ">FAQ</a></li>
+        <li><a onclick="hideMenu()" href="#contact">Contact Us</a></li>
+    </ul>
+</section>
+
+<section id="hero">
+    <div class="container hero-bg wow">
+        <div>
+            <h1>Optimize Cloud Costs, Drive Business Growth.</h1>
+            <p>Reimagine your cloud future. Optimize your cloud costs. Drive business growth. With our expert FinOps
+                solutions, you can unlock the full potential of your cloud investment and achieve significant cost
+                savings.</p>
+            <a href="#contact">
+                <button>Contact Us</button>
             </a>
         </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="#"><img class="logo" src="/images/logo.png" alt="logo"></a>
-            <ul class="">
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">What We Do</a></li>
-                <li><a href="#how">How We Do It</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
+    </div>
+</section>
 
-            <a href="#contact"><button href="#contact">Contact Us</button></a>
-            <svg id="hamburger" onclick="hamburger" class="hamburger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 8.99999C5.73497 8.99624 5.47185 9.0452 5.22591 9.14403C4.97997 9.24286 4.75613 9.38958 4.56739 9.57567C4.37865 9.76176 4.22878 9.9835 4.12649 10.228C4.02419 10.4725 3.97151 10.7349 3.97151 11C3.97151 11.265 4.02419 11.5274 4.12649 11.772C4.22878 12.0165 4.37865 12.2382 4.56739 12.4243C4.75613 12.6104 4.97997 12.7571 5.22591 12.8559C5.47185 12.9548 5.73497 13.0037 6 13H42C42.265 13.0037 42.5281 12.9548 42.7741 12.8559C43.02 12.7571 43.2439 12.6104 43.4326 12.4243C43.6213 12.2382 43.7712 12.0165 43.8735 11.772C43.9758 11.5274 44.0285 11.265 44.0285 11C44.0285 10.7349 43.9758 10.4725 43.8735 10.228C43.7712 9.9835 43.6213 9.76176 43.4326 9.57567C43.2439 9.38958 43.02 9.24286 42.7741 9.14403C42.5281 9.0452 42.265 8.99624 42 8.99999H6ZM6 22C5.73497 21.9962 5.47185 22.0452 5.22591 22.144C4.97997 22.2429 4.75613 22.3896 4.56739 22.5757C4.37865 22.7618 4.22878 22.9835 4.12649 23.228C4.02419 23.4725 3.97151 23.7349 3.97151 24C3.97151 24.265 4.02419 24.5274 4.12649 24.772C4.22878 25.0165 4.37865 25.2382 4.56739 25.4243C4.75613 25.6104 4.97997 25.7571 5.22591 25.8559C5.47185 25.9548 5.73497 26.0037 6 26H42C42.265 26.0037 42.5281 25.9548 42.7741 25.8559C43.02 25.7571 43.2439 25.6104 43.4326 25.4243C43.6213 25.2382 43.7712 25.0165 43.8735 24.772C43.9758 24.5274 44.0285 24.265 44.0285 24C44.0285 23.7349 43.9758 23.4725 43.8735 23.228C43.7712 22.9835 43.6213 22.7618 43.4326 22.5757C43.2439 22.3896 43.02 22.2429 42.7741 22.144C42.5281 22.0452 42.265 21.9962 42 22H6ZM6 35C5.73497 34.9962 5.47185 35.0452 5.22591 35.144C4.97997 35.2429 4.75613 35.3896 4.56739 35.5757C4.37865 35.7618 4.22878 35.9835 4.12649 36.228C4.02419 36.4725 3.97151 36.7349 3.97151 37C3.97151 37.265 4.02419 37.5274 4.12649 37.772C4.22878 38.0165 4.37865 38.2382 4.56739 38.4243C4.75613 38.6104 4.97997 38.7571 5.22591 38.8559C5.47185 38.9548 5.73497 39.0037 6 39H42C42.265 39.0037 42.5281 38.9548 42.7741 38.8559C43.02 38.7571 43.2439 38.6104 43.4326 38.4243C43.6213 38.2382 43.7712 38.0165 43.8735 37.772C43.9758 37.5274 44.0285 37.265 44.0285 37C44.0285 36.7349 43.9758 36.4725 43.8735 36.228C43.7712 35.9835 43.6213 35.7618 43.4326 35.5757C43.2439 35.3896 43.02 35.2429 42.7741 35.144C42.5281 35.0452 42.265 34.9962 42 35H6Z" fill="#002E0E"/>
-            </svg>
-
-        </div>
-    </nav>
-
-    <section id="ham-menu">
-        <ul>
-            <li><a onclick="hideMenu()" href="#">Home</a></li>
-            <li><a onclick="hideMenu()" href="#services">What We Do</a></li>
-            <li><a onclick="hideMenu()" href="#how">How We Do It</a></li>
-            <li><a onclick="hideMenu()" href="#about">About Us</a></li>
-            <li><a onclick="hideMenu()" href="#testimonials">Testimonials</a></li>
-            <li><a onclick="hideMenu()" href="#contact">Contact Us</a></li>
-        </ul>
-    </section>
-
-    <section id="hero">
-        <div class="container hero-bg wow">
-            <div>
-                <h1>Optimize Cloud Costs, Drive Business Growth.</h1>
-                <p>Reimagine your cloud future. Optimize your cloud costs. Drive business growth. With our expert FinOps solutions, you can unlock the full potential of your cloud investment and achieve significant cost savings.</p>
-                <a href="#contact"><button>Contact Us</button></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="tabs">
-        <div class="container">
-            <div class="buttons">
-                <button class="active" id="info">
-                    <svg width="91" height="90" viewBox="0 0 91 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M45.6545 0C20.8008 0 0.654541 20.1463 0.654541 45C0.654541 69.8537 20.8008 90 45.6545 90C70.5082 90 90.6545 69.8537 90.6545 45C90.6545 20.1463 70.5082 0 45.6545 0ZM45.6545 17.6087C48.8965 17.6087 51.5241 20.2363 51.5241 23.4783C51.5241 26.7202 48.8965 29.3478 45.6545 29.3478C42.4126 29.3478 39.785 26.7202 39.785 23.4783C39.785 20.2363 42.4126 17.6087 45.6545 17.6087ZM53.4806 70.4348H49.5676H41.7415H37.8285V66.5217H41.7415V41.087H37.8285V37.1739H41.7415H49.5676V41.087V66.5217H53.4806V70.4348Z" fill="white"/>
-                    </svg>
-                    <h2>Information</h2>
-                    <p class="wow">We analyze 40+ AWS services for resource level data<br><br>
-                        We roll up this data so you understand not just the EC2 costs for a group of servers, but the volumes and backups as well<br><br>                    
-                        We deliver an Excel or Google Sheets report explaining where you spend your money
-                    </p>
-                </button>
-
-                <button class="" id="optimization">
-                    <svg width="76" height="70" viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.4746 0C17.578 0 16.8467 0.731287 16.8467 1.62791C16.8467 2.52453 17.578 3.25581 18.4746 3.25581H29.1578L1.02551 31.3881C0.389609 32.024 0.389609 33.0923 1.02551 33.7282C1.34346 34.0461 1.77587 34.186 2.19557 34.186C2.61526 34.186 3.04768 34.0461 3.36563 33.7282L31.4979 5.59593V16.2791C31.4979 17.1757 32.2292 17.907 33.1258 17.907C34.0224 17.907 34.7537 17.1757 34.7537 16.2791V0H18.4746ZM52.6607 6.51163V70H75.4514V6.51163H52.6607ZM26.6142 27.6744V70H49.4049V27.6744H26.6142ZM0.567661 45.5814V70H23.3584V45.5814H0.567661Z" fill="#888888"/>
-                    </svg>                        
-                    <h2>Optimization</h2>
-                    <p class="wow">We use over 50 strategies for saving you money<br><br> 
-                        We offer options and recommendations for savings with actual dollar amounts<br><br>
-                        Should you be paying upfront for EC2 instances? We'll tell you how much it would save.<br><br> 
-                        Which S3 storage class is best for a bucket? How much will it save?
-                    </p>
-                </button>
-
-                <button id="operation">
-                    <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M68.2417 31.0648L65.7826 30.45C65.4417 28.1628 64.8467 25.932 64.0067 23.7954L65.8252 22.0378C66.8083 21.0883 67.0183 19.597 66.335 18.407L65.288 16.5961C64.6033 15.4091 63.2048 14.8491 61.89 15.2204L59.4263 15.925C57.9943 14.1309 56.3676 12.5057 54.575 11.0737L55.2796 8.61152C55.6554 7.29674 55.0909 5.89978 53.907 5.215L52.093 4.16804C50.9061 3.48326 49.4133 3.69478 48.4652 4.67783L46.7046 6.4963C44.565 5.6563 42.3357 5.0613 40.0515 4.72196L39.4352 2.2537C39.102 0.925217 37.912 0 36.5454 0H34.453C33.085 0 31.8965 0.925217 31.5648 2.2537L30.9485 4.71739C28.6613 5.05826 26.432 5.65326 24.2954 6.49326L22.5363 4.6763C21.5883 3.69326 20.0985 3.48478 18.9054 4.165L17.0915 5.21196C15.9061 5.89674 15.3415 7.2937 15.7189 8.60848L16.4235 11.0691C14.6309 12.5011 13.0041 14.1278 11.5722 15.9204L9.10696 15.2159C7.78761 14.843 6.3937 15.4061 5.71196 16.59L4.665 18.4039C3.98174 19.5893 4.19174 21.0822 5.17478 22.0317L6.99478 23.7909C6.15478 25.9274 5.55978 28.1583 5.21891 30.4454L2.7613 31.0602C1.42978 31.3935 0.5 32.582 0.5 33.9546V36.047C0.5 37.418 1.42826 38.6065 2.7537 38.9337L5.21739 39.55C5.55826 41.8372 6.15326 44.068 6.99326 46.2046L5.17478 47.9622C4.19174 48.9133 3.98174 50.4046 4.665 51.593L5.71196 53.4039C6.39674 54.5909 7.7937 55.1524 9.11 54.7796L11.5737 54.075C13.0057 55.8691 14.6324 57.4943 16.425 58.9263L15.7204 61.3885C15.3446 62.7033 15.9091 64.1002 17.093 64.785L18.907 65.832C20.097 66.5167 21.5883 66.3083 22.5348 65.3222L24.2954 63.5037C26.435 64.3437 28.6643 64.9387 30.9485 65.278L31.5648 67.7463C31.898 69.0748 33.088 70 34.453 70H36.5454C37.9135 70 39.102 69.0733 39.4337 67.7448L40.05 65.2826C42.3341 64.9417 44.565 64.3467 46.7046 63.5067L48.4622 65.3237C49.4117 66.3083 50.903 66.5167 52.093 65.835L53.907 64.788C55.0924 64.1033 55.657 62.7063 55.2796 61.3915L54.575 58.9309C56.3676 57.4989 57.9943 55.8722 59.4263 54.0796L61.8915 54.7841C63.2093 55.157 64.6048 54.5939 65.2865 53.41L66.3335 51.5961C67.0167 50.4106 66.8067 48.9178 65.8237 47.9683L64.0037 46.2091C64.8437 44.0696 65.4402 41.8387 65.7796 39.5546L68.2372 38.9398C69.5702 38.6065 70.5 37.418 70.5 36.047V33.9546C70.5 32.582 69.5717 31.395 68.2417 31.0648ZM17.0626 42.1293C16.2059 39.9152 15.7174 37.517 15.7174 35C15.7174 32.483 16.2059 30.0848 17.0626 27.8707L26.5278 33.3352C26.4289 33.8754 26.3696 34.4309 26.3696 35C26.3696 35.5691 26.4289 36.1246 26.5278 36.6648L17.0626 42.1293ZM32.4565 54.5239C27.4835 53.7539 23.1237 51.1502 20.1015 47.4037L29.5728 41.9361C30.4159 42.6574 31.3913 43.222 32.4565 43.5993V54.5239ZM32.4565 26.4007C31.3898 26.778 30.4143 27.3426 29.5728 28.0639L20.1015 22.5963C23.1237 18.8498 27.485 16.2461 32.4565 15.4761V26.4007ZM38.5435 15.4761C43.5165 16.2461 47.8763 18.8498 50.8985 22.5963L41.4272 28.0639C40.5841 27.3426 39.6087 26.778 38.5435 26.4007V15.4761ZM38.5435 54.5239V43.5993C39.6102 43.222 40.5857 42.6574 41.4272 41.9361L50.8985 47.4037C47.8763 51.1502 43.515 53.7539 38.5435 54.5239ZM53.9374 42.1293L44.4722 36.6648C44.5711 36.1246 44.6304 35.5691 44.6304 35C44.6304 34.4309 44.5711 33.8754 44.4722 33.3352L53.9374 27.8707C54.7941 30.0848 55.2826 32.483 55.2826 35C55.2826 37.517 54.7941 39.9152 53.9374 42.1293Z" fill="#888888"/>
-                    </svg>                                              
-                    <h2>Operation</h2>
-                    <p class="wow">We train all the key stakeholders on the benefits of FinOps<br><br> 
-                        We help you put the processes in place to continue to save<br><br> 
-                        We follow up yearly to make sure your costs remain optimized<br><br> 
-                        We offer ongoing support on your FinOps journey.
-                    </p>
-                </button>
-            </div>
-            <p id="tab-p" class="wow">We analyze 40+ AWS services for resource level data<br><br> We roll up this data so you understand not just the EC2 costs for a group of servers, but the volumes and backups as well<br><br> We deliver an Excel or Google Sheets report explaining
-                where you spend your money
-            </p>
-        </div>
-    </section>
-
-    <section id="client-logo">
-        <div class="container">
-            <img src="/images/cl1.svg" alt="">
-            <img src="/images/cl2.svg" alt="">
-            <img src="/images/cl3.svg" alt="">
-            <img src="/images/cl4.svg" alt="">
-            <img src="/images/cl5.svg" alt="">
-        </div>
-    </section>
-
-    <section id="sale">
-        <div class="container">
-            <div>
-                <img src="/images/sale.svg" alt="sales">
-            </div>
-            <div class="wow">
-                <h2>LIMITED TIME OFFER: Get your FREE AWS Resource Cost Analysis</h2>
-                <p>We make your Cost and Usage Report manageable. We take that data and break it down by service, resource and usage type. We help you roll up cost data from EBS volumes and snapshots for each EC2 instance. We help you understand what you
-                    pay for each S3 bucket including networking and storage costs.<br><br> When we complete our analysis, you will be given an Excel or Google Sheets document containing sheets for up to 45 services. Each sheet will be broken down into
-                    resources. Each resource will have some basic information, a breakdown by Usage Type, a listing of all associated costs for dependent resources, and an actual total.<br><br> Offer valid for qualified customers.
+<section id="tabs">
+    <div class="container">
+        <div class="buttons">
+            <button class="active" id="info">
+                <svg width="91" height="90" viewBox="0 0 91 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.6545 0C20.8008 0 0.654541 20.1463 0.654541 45C0.654541 69.8537 20.8008 90 45.6545 90C70.5082 90 90.6545 69.8537 90.6545 45C90.6545 20.1463 70.5082 0 45.6545 0ZM45.6545 17.6087C48.8965 17.6087 51.5241 20.2363 51.5241 23.4783C51.5241 26.7202 48.8965 29.3478 45.6545 29.3478C42.4126 29.3478 39.785 26.7202 39.785 23.4783C39.785 20.2363 42.4126 17.6087 45.6545 17.6087ZM53.4806 70.4348H49.5676H41.7415H37.8285V66.5217H41.7415V41.087H37.8285V37.1739H41.7415H49.5676V41.087V66.5217H53.4806V70.4348Z"
+                          fill="white"/>
+                </svg>
+                <h2>Information</h2>
+                <p class="wow">We analyze 40+ AWS services for resource level data<br><br>
+                    We roll up this data so you understand not just the EC2 costs for a group of servers, but the
+                    volumes and backups as well<br><br>
+                    We deliver an Excel or Google Sheets report explaining where you spend your money
                 </p>
-                <a href="#contact"><button href="#contact">Contact Us</button></a>
-            </div>
-        </div>
-    </section>
+            </button>
 
-    <section id="services">
-        <div class="container">
-            <div class="wow">
-                <div class="heading">
-                    <h4>Our Services</h4>
-                    <h2>There are two phases to our service: analysis and training</h2>
-                </div>
-                <p>At FinOps-Expert, we not only analysis and optimize your cloud costs, we also train you, to ensure better cost management over time.</p>
-                <a href="#contact"><button href="#contact">Contact Us</button></a>
-            </div>
-            <div>
-                <img src="/images/inspector.svg" alt="inspector">
-            </div>
-        </div>
-    </section>
+            <button class="" id="optimization">
+                <svg width="76" height="70" viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.4746 0C17.578 0 16.8467 0.731287 16.8467 1.62791C16.8467 2.52453 17.578 3.25581 18.4746 3.25581H29.1578L1.02551 31.3881C0.389609 32.024 0.389609 33.0923 1.02551 33.7282C1.34346 34.0461 1.77587 34.186 2.19557 34.186C2.61526 34.186 3.04768 34.0461 3.36563 33.7282L31.4979 5.59593V16.2791C31.4979 17.1757 32.2292 17.907 33.1258 17.907C34.0224 17.907 34.7537 17.1757 34.7537 16.2791V0H18.4746ZM52.6607 6.51163V70H75.4514V6.51163H52.6607ZM26.6142 27.6744V70H49.4049V27.6744H26.6142ZM0.567661 45.5814V70H23.3584V45.5814H0.567661Z"
+                          fill="#888888"/>
+                </svg>
+                <h2>Optimization</h2>
+                <p class="wow">We use over 50 strategies for saving you money<br><br>
+                    We offer options and recommendations for savings with actual dollar amounts<br><br>
+                    Should you be paying upfront for EC2 instances? We'll tell you how much it would save.<br><br>
+                    Which S3 storage class is best for a bucket? How much will it save?
+                </p>
+            </button>
 
-    <section id="how">
-        <div class="container">
+            <button id="operation">
+                <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68.2417 31.0648L65.7826 30.45C65.4417 28.1628 64.8467 25.932 64.0067 23.7954L65.8252 22.0378C66.8083 21.0883 67.0183 19.597 66.335 18.407L65.288 16.5961C64.6033 15.4091 63.2048 14.8491 61.89 15.2204L59.4263 15.925C57.9943 14.1309 56.3676 12.5057 54.575 11.0737L55.2796 8.61152C55.6554 7.29674 55.0909 5.89978 53.907 5.215L52.093 4.16804C50.9061 3.48326 49.4133 3.69478 48.4652 4.67783L46.7046 6.4963C44.565 5.6563 42.3357 5.0613 40.0515 4.72196L39.4352 2.2537C39.102 0.925217 37.912 0 36.5454 0H34.453C33.085 0 31.8965 0.925217 31.5648 2.2537L30.9485 4.71739C28.6613 5.05826 26.432 5.65326 24.2954 6.49326L22.5363 4.6763C21.5883 3.69326 20.0985 3.48478 18.9054 4.165L17.0915 5.21196C15.9061 5.89674 15.3415 7.2937 15.7189 8.60848L16.4235 11.0691C14.6309 12.5011 13.0041 14.1278 11.5722 15.9204L9.10696 15.2159C7.78761 14.843 6.3937 15.4061 5.71196 16.59L4.665 18.4039C3.98174 19.5893 4.19174 21.0822 5.17478 22.0317L6.99478 23.7909C6.15478 25.9274 5.55978 28.1583 5.21891 30.4454L2.7613 31.0602C1.42978 31.3935 0.5 32.582 0.5 33.9546V36.047C0.5 37.418 1.42826 38.6065 2.7537 38.9337L5.21739 39.55C5.55826 41.8372 6.15326 44.068 6.99326 46.2046L5.17478 47.9622C4.19174 48.9133 3.98174 50.4046 4.665 51.593L5.71196 53.4039C6.39674 54.5909 7.7937 55.1524 9.11 54.7796L11.5737 54.075C13.0057 55.8691 14.6324 57.4943 16.425 58.9263L15.7204 61.3885C15.3446 62.7033 15.9091 64.1002 17.093 64.785L18.907 65.832C20.097 66.5167 21.5883 66.3083 22.5348 65.3222L24.2954 63.5037C26.435 64.3437 28.6643 64.9387 30.9485 65.278L31.5648 67.7463C31.898 69.0748 33.088 70 34.453 70H36.5454C37.9135 70 39.102 69.0733 39.4337 67.7448L40.05 65.2826C42.3341 64.9417 44.565 64.3467 46.7046 63.5067L48.4622 65.3237C49.4117 66.3083 50.903 66.5167 52.093 65.835L53.907 64.788C55.0924 64.1033 55.657 62.7063 55.2796 61.3915L54.575 58.9309C56.3676 57.4989 57.9943 55.8722 59.4263 54.0796L61.8915 54.7841C63.2093 55.157 64.6048 54.5939 65.2865 53.41L66.3335 51.5961C67.0167 50.4106 66.8067 48.9178 65.8237 47.9683L64.0037 46.2091C64.8437 44.0696 65.4402 41.8387 65.7796 39.5546L68.2372 38.9398C69.5702 38.6065 70.5 37.418 70.5 36.047V33.9546C70.5 32.582 69.5717 31.395 68.2417 31.0648ZM17.0626 42.1293C16.2059 39.9152 15.7174 37.517 15.7174 35C15.7174 32.483 16.2059 30.0848 17.0626 27.8707L26.5278 33.3352C26.4289 33.8754 26.3696 34.4309 26.3696 35C26.3696 35.5691 26.4289 36.1246 26.5278 36.6648L17.0626 42.1293ZM32.4565 54.5239C27.4835 53.7539 23.1237 51.1502 20.1015 47.4037L29.5728 41.9361C30.4159 42.6574 31.3913 43.222 32.4565 43.5993V54.5239ZM32.4565 26.4007C31.3898 26.778 30.4143 27.3426 29.5728 28.0639L20.1015 22.5963C23.1237 18.8498 27.485 16.2461 32.4565 15.4761V26.4007ZM38.5435 15.4761C43.5165 16.2461 47.8763 18.8498 50.8985 22.5963L41.4272 28.0639C40.5841 27.3426 39.6087 26.778 38.5435 26.4007V15.4761ZM38.5435 54.5239V43.5993C39.6102 43.222 40.5857 42.6574 41.4272 41.9361L50.8985 47.4037C47.8763 51.1502 43.515 53.7539 38.5435 54.5239ZM53.9374 42.1293L44.4722 36.6648C44.5711 36.1246 44.6304 35.5691 44.6304 35C44.6304 34.4309 44.5711 33.8754 44.4722 33.3352L53.9374 27.8707C54.7941 30.0848 55.2826 32.483 55.2826 35C55.2826 37.517 54.7941 39.9152 53.9374 42.1293Z"
+                          fill="#888888"/>
+                </svg>
+                <h2>Operation</h2>
+                <p class="wow">We train all the key stakeholders on the benefits of FinOps<br><br>
+                    We help you put the processes in place to continue to save<br><br>
+                    We follow up yearly to make sure your costs remain optimized<br><br>
+                    We offer ongoing support on your FinOps journey.
+                </p>
+            </button>
+        </div>
+        <p id="tab-p" class="wow">We analyze 40+ AWS services for resource level data<br><br> We roll up this data so
+            you understand not just the EC2 costs for a group of servers, but the volumes and backups as well<br><br> We
+            deliver an Excel or Google Sheets report explaining
+            where you spend your money
+        </p>
+    </div>
+</section>
+
+<section id="client-logo">
+    <div class="container">
+        <img src="/images/cl1.svg" alt="">
+        <img src="/images/cl2.svg" alt="">
+        <img src="/images/cl3.svg" alt="">
+        <img src="/images/cl4.svg" alt="">
+        <img src="/images/cl5.svg" alt="">
+    </div>
+</section>
+
+<section id="sale">
+    <div class="container">
+        <div>
+            <img src="/images/sale.svg" alt="sales">
+        </div>
+        <div class="wow">
+            <h2>LIMITED TIME OFFER: Get your FREE AWS Resource Cost Analysis</h2>
+            <p>We make your Cost and Usage Report manageable. We take that data and break it down by service, resource
+                and usage type. We help you roll up cost data from EBS volumes and snapshots for each EC2 instance. We
+                help you understand what you
+                pay for each S3 bucket including networking and storage costs.<br><br> When we complete our analysis,
+                you will be given an Excel or Google Sheets document containing sheets for up to 45 services. Each sheet
+                will be broken down into
+                resources. Each resource will have some basic information, a breakdown by Usage Type, a listing of all
+                associated costs for dependent resources, and an actual total.<br><br> Offer valid for qualified
+                customers.
+            </p>
+            <a href="#contact">
+                <button href="#contact">Contact Us</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <div class="wow">
             <div class="heading">
-                <h4>How We Do It</h4>
-                <h2>Few steps involved in our process</h2>
+                <h4>Our Services</h4>
+                <h2>There are two phases to our service: analysis and training</h2>
             </div>
+            <p>At FinOps-Expert, we not only analysis and optimize your cloud costs, we also train you, to ensure better
+                cost management over time.</p>
+            <a href="#contact">
+                <button href="#contact">Contact Us</button>
+            </a>
+        </div>
+        <div>
+            <img src="/images/inspector.svg" alt="inspector">
+        </div>
+    </div>
+</section>
+
+<section id="how">
+    <div class="container">
+        <div class="heading">
+            <h4>How We Do It</h4>
+            <h2>Few steps involved in our process</h2>
+        </div>
+        <div class="wow">
+            <ol>
+                <li>
+                    <h2>Setup</h2>
+                    <ul>
+                        <li>Gather basic info and roles on team</li>
+                        <li>Grant Read-only access to AWS accounts</li>
+                        <li>Configure Cost and Usage Reports</li>
+                    </ul>
+
+                    <br>
+                </li>
+                <li>
+                    <h2>Analysis</h2>
+                    <ul>
+                        <li>40+ resource types monitored daily</li>
+                        <li>Amortized cost data on a resource level</li>
+                        <li>50+ strategies for saving money</li>
+                    </ul>
+                    <br>
+                </li>
+                <li>
+                    <h2>Discovery</h2>
+                    <ul>
+                        <li>Written report with actionable recommendations</li>
+                        <li>Google Sheets / Excel document with detailed cost information</li>
+                        <li>Summary of potential monthly savings</li>
+                    </ul>
+
+                    <br>
+                </li>
+                <li>
+                    <h2>Training</h2>
+                    <ul>
+                        <li>Comprehensive FinOps training for all stakeholders</li>
+                        <li>AWS specific training for reducing costs</li>
+                    </ul>
+
+                    <br>
+                </li>
+                <li>
+                    <h2>Monitoring (Coming Soon)</h2>
+                    <ul>
+                        <li>Daily FinOps report with what you actually need to know</li>
+                        <li>Daily spend analysis for ongoing recommendations</li>
+                        <li>Advanced anomaly detection powered by AI</li>
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <img src="/images/scott-graham-5fNmWej4tAA-unsplash.png" alt="image">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="benefits">
+    <div class="container">
+        <div class="heading">
+            <h4>Benefits</h4>
+            <h2>FinOps offers a multitude of benefits for organizations leveraging cloud services. </h2>
+        </div>
+        <div>
+            <img src="/images/benefits.svg" alt="benefits wheel">
+            <div>
+                <h2>Key benefits of FinOps</h2>
+                <ul>
+                    <li><span>Cost Optimization:</span> Reduce cloud expenses by identifying and eliminating wasteful
+                        spending.
+                    </li>
+                    <br>
+                    <li><span>Operational Efficiency: </span>Streamline cloud financial management processes through
+                        automation and collaboration.
+                    </li>
+                    <br>
+                    <li><span>Enhanced Visibility and Control:</span> Gain real-time insights into cloud usage and costs
+                        to make informed decisions.
+                    </li>
+                    <br>
+                    <li><span>Accelerate Innovation:</span> Free up resources to invest in new projects and drive
+                        business growth.
+                    </li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="heading">
+            <h4>Who We Are</h4>
+            <h2>we are certified experts in finOps analysis and training</h2>
+        </div>
+        <div class="founder">
+            <img src="/images/founder.png" alt="Sean Gallavan">
             <div class="wow">
+                <div>
+                    <h4>Founder</h4>
+                    <h2>Sean Gallavan</h2>
+                </div>
+                <p>Sean Gallavan founded FinOps Experts with a simple yet powerful mission: to demystify the complexity
+                    of AWS billing and help businesses uncover the savings they deserve. A seasoned DevOps leader with
+                    over a dozen years of experience
+                    optimizing cloud costs, Sean knows firsthand how AWS billing isn't just complex by chance—it's a
+                    deliberate design.<br><br>After years of seeing teams struggle to navigate their AWS expenses and
+                    witnessing the disconnect between
+                    finance, engineering, and operations, Sean set out to bring all stakeholders together under one
+                    common goal: optimizing cost without sacrificing innovation. At his last company alone, Sean's
+                    expertise in AWS cost management is
+                    projected to save $1 million over the next five years.
+                </p>
+                <div class="certs">
+                    <div>
+                        <img src="/images/AWS-Certified-Solutions-Architect-Professional_badge.png"
+                             alt="AWS-Certified-Solutions-Architect-Professional_badge">
+                        <p>Professional, Amazon Web Services<br>AWS Solutions Architect</p>
+                    </div>
+                    <div>
+                        <img src="/images/AWS Solutions Architect.png" alt="AWS Solutions Architect Badge">
+                        <p>Associate, Amazon Web Services<br>AWS Solutions Architect</p>
+                    </div>
+                    <div>
+                        <img src="/images/AWS-SysOps 1.png" alt="AWS SysOps Administrator Badge">
+                        <p>Associate, Amazon Web Services<br>AWS SysOps Administrator</p>
+                    </div>
+                    <div>
+                        <img src="/images/image 1.png" alt="FinOps Professional Badge">
+                        <p>The Linux Association<br>Certified FinOps Professional</p>
+                    </div>
+                    <div>
+                        <img src="/images/logo_cka_whitetext-300x293 1.png" alt="Kubernetes Administrator Badge">
+                        <p>The Linux Association<br>Certified Kubernetes Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cpo">
+            <img src="/images/CPF.png" alt="Miss Piggy">
+            <div class="wow">
+                <div>
+                    <h4>Chief Pet Officer</h4>
+                    <h2>Miss Piggy</h2>
+                </div>
+                <p>Meet Miss Piggy, our resident Holland Lop and undisputed star of the office! At 3.5 years young, this
+                    fluffy bundle of joy takes her role as Chief Pet Officer very seriously—whether that means hopping
+                    into meetings, charming visitors,
+                    or expertly sniffing out hidden treats. Miss Piggy is a social butterfly who adores making new
+                    friends of all species. From wagging tails to curious meows (and even the occasional squawk), she’s
+                    got a soft spot for dogs, cats,
+                    and one particularly chatty parrot. With her friendly personality and floppy ears, Miss Piggy makes
+                    sure everyone feels welcome—just as long as you don’t forget the snacks! 🥕</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <div class="heading">
+            <h4>Testimonials</h4>
+            <h2>Experience the FinOps difference, firsthand with finOps experts.</h2>
+        </div>
+        <div class="wow">
+            <div class="testimonial">
+                <p class="name">C.E.O Zenith Solutions</p>
+                <p>"Managing our complex cloud infrastructure was a daunting task. FinOps Experts provided us with the
+                    tools and expertise to gain visibility into our cloud spending, identify cost-saving opportunities,
+                    and optimize our cloud resources.
+                    Their solutions have helped us achieve significant cost savings and improve our overall operational
+                    efficiency."</p>
+                <img src="/images/star.svg" alt="">
+            </div>
+            <div class="testimonial">
+                <p class="name">Nova Innovations</p>
+                <p>"As a fast-growing tech startup, we needed a reliable partner to help us manage our cloud costs.
+                    FinOps Experts provided us with the insights and tools we needed to optimize our cloud usage and
+                    scale our operations. Their team of experts
+                    was always available to answer our questions and provide guidance."</p>
+                <img src="/images/star.svg" alt="">
+            </div>
+        </div>
+        <h2>Money Back Guarantee.<br>If you’re not happy, we don’t get paid.</h2>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="container">
+        <h2>Frequently asked questions</h2>
+
+        <div class="dropdown">
+            <div class="wow drop active" id="drop1">
+                <div>
+                    <h3>What is FinOps?</h3>
+                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z"
+                              fill="#777777"/>
+                    </svg>
+                </div>
+                <p>FinOps, or Cloud Financial Management, is a collaborative practice that enables organizations to get
+                    maximum business value from their cloud investments. It involves bringing together finance,
+                    technology, and business teams to make
+                    informed decisions about cloud spending.</p>
+            </div>
+            <div class="wow drop " id="drop2">
+                <div>
+                    <h3>Why is FinOps Important?</h3>
+                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z"
+                              fill="#777777"/>
+                    </svg>
+                </div>
+                <p>FinOps is crucial for several reasons:</p>
+                <ul>
+                    <li>Cost Optimization: It helps identify and eliminate unnecessary cloud spending, leading to
+                        significant cost savings.
+                    </li>
+                    <li>Improved Operational Efficiency: It streamlines cloud financial management processes, reducing
+                        manual effort and improving accuracy.
+                    </li>
+                    <li> Enhanced Visibility and Control: It provides real-time insights into cloud usage and costs,
+                        enabling organizations to make informed decisions.
+                    </li>
+                    <li> Accelerated Innovation: By optimizing costs and improving efficiency, FinOps frees up resources
+                        to invest in new projects and drive business growth.
+                    </li>
+                </ul>
+            </div>
+            <div class="wow drop" id="drop3">
+                <div>
+                    <h3>Who Should Be Involved in FinOps?</h3>
+                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z"
+                              fill="#777777"/>
+                    </svg>
+                </div>
+                <p>A successful FinOps practice requires collaboration between various teams, including:</p>
+                <ul>
+                    <li>Finance: Responsible for budgeting, forecasting, and cost allocation.</li>
+                    <li>Technology: Responsible for cloud infrastructure, operations, and engineering.</li>
+                    <li>Business: Responsible for setting business objectives and priorities.</li>
+                </ul>
+            </div>
+            <div class="wow drop" id="drop4">
+                <div>
+                    <h3>What are the Key Principles of FinOps?</h3>
+                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z"
+                              fill="#777777"/>
+                    </svg>
+                </div>
+                <p>FinOps is crucial for several reasons:</p>
+                <ul>
+                    <li>Collaboration: Foster collaboration between finance, technology, and business teams.</li>
+                    <li>Continuous Improvement: Continuously monitor and optimize cloud spending.</li>
+                    <li>Informed Decision Making: Make data-driven decisions based on real-time insights.</li>
+                    <li>Ownership and Accountability: Assign ownership of cloud costs to specific teams or
+                        individuals.
+                    </li>
+                </ul>
+            </div>
+            <div class="wow drop" id="drop5">
+                <div>
+                    <h3>How Can I Get Started with FinOps?</h3>
+                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z"
+                              fill="#777777"/>
+                    </svg>
+                </div>
+                <p>To get started with FinOps, consider the following steps:</p>
                 <ol>
-                    <li>
-                        <h2>Setup</h2>
-                        <ul>
-                            <li>Gather basic info and roles on team</li>
-                            <li>Grant Read-only access to AWS accounts </li>
-                            <li>Configure Cost and Usage Reports </li>
-                        </ul>
-
-                        <br>
+                    <li>Assess Your Current Cloud Usage: Understand your current spending patterns and identify areas
+                        for optimization.
                     </li>
-                    <li>
-                        <h2>Analysis</h2>
-                        <ul>
-                            <li>40+ resource types monitored daily</li>
-                            <li>Amortized cost data on a resource level</li>
-                            <li>50+ strategies for saving money </li>
-                        </ul>
-                        <br>
+                    <li>Establish a FinOps Team: Create a cross-functional team to oversee FinOps initiatives.</li>
+                    <li>Implement Cloud Cost Management Tools: Use tools to track and analyze cloud usage and costs.
                     </li>
-                    <li>
-                        <h2>Discovery</h2>
-                        <ul>
-                            <li>Written report with actionable recommendations </li>
-                            <li>Google Sheets / Excel document with detailed cost information</li>
-                            <li>Summary of potential monthly savings </li>
-                        </ul>
-
-                        <br>
+                    <li>Develop a FinOps Culture: Foster a culture of collaboration, transparency, and accountability.
                     </li>
-                    <li>
-                        <h2>Training</h2>
-                        <ul>
-                            <li>Comprehensive FinOps training for all stakeholders </li>
-                            <li>AWS specific training for reducing costs </li>
-                        </ul>
-
-                        <br>
-                    </li>
-                    <li>
-                        <h2>Monitoring (Coming Soon)</h2>
-                        <ul>
-                            <li>Daily FinOps report with what you actually need to know </li>
-                            <li>Daily spend analysis for ongoing recommendations </li>
-                            <li>Advanced anomaly detection powered by AI</li>
-                        </ul>
+                    <li>Continuously Monitor and Optimize: Regularly review cloud spending and implement improvements.
                     </li>
                 </ol>
-                <div>
-                    <img src="/images/scott-graham-5fNmWej4tAA-unsplash.png" alt="image">
-
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="benefits">
-        <div class="container">
-            <div class="heading">
-                <h4>Benefits</h4>
-                <h2>FinOps offers a multitude of benefits for organizations leveraging cloud services. </h2>
-            </div>
-            <div>
-                <img src="/images/benefits.svg" alt="benefits wheel">
-                <div>
-                    <h2>Key benefits of FinOps</h2>
-                    <ul>
-                        <li><span>Cost Optimization:</span> Reduce cloud expenses by identifying and eliminating wasteful spending.</li><br>
-                        <li><span>Operational Efficiency: </span>Streamline cloud financial management processes through automation and collaboration.</li><br>
-                        <li><span>Enhanced Visibility and Control:</span> Gain real-time insights into cloud usage and costs to make informed decisions.</li><br>
-                        <li><span>Accelerate Innovation:</span> Free up resources to invest in new projects and drive business growth.</li><br>
-                    </ul>
-                </div>
-            </div>
+<section id="contact">
+    <div class="container">
+        <img class="logo" src="/images/logo.png" alt="logo">
+        <div id="zf_div_0_sU0byohmht4_6egronBHbAfXNd3WHMBJHhfdrC7jI"></div>
+
+        <div class="wow">
+            <p>You can also reach out to us directly.</p>
+            <p>Sales: <a href="mailto:sales@finops-experts.com">sales@finops-experts.com</a><br>
+                Support: <a href="mailto:support@finops-experts.com">support@finops-experts.com</a></p>
+            <p>We look forward to helping you soon!</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about">
-        <div class="container">
-            <div class="heading">
-                <h4>Who We Are</h4>
-                <h2>we are certified experts in finOps analysis and training</h2>
-            </div>
-            <div class="founder">
-                <img src="/images/founder.png" alt="Sean Gallavan">
-                <div class="wow">
-                    <div>
-                        <h4>Founder</h4>
-                        <h2>Sean Gallavan</h2>
-                    </div>
-                    <p>Sean Gallavan founded FinOps Experts with a simple yet powerful mission: to demystify the complexity of AWS billing and help businesses uncover the savings they deserve. A seasoned DevOps leader with over a dozen years of experience
-                        optimizing cloud costs, Sean knows firsthand how AWS billing isn't just complex by chance—it's a deliberate design.<br><br>After years of seeing teams struggle to navigate their AWS expenses and witnessing the disconnect between
-                        finance, engineering, and operations, Sean set out to bring all stakeholders together under one common goal: optimizing cost without sacrificing innovation. At his last company alone, Sean's expertise in AWS cost management is
-                        projected to save $1 million over the next five years.
-                    </p>
-                    <div class="certs">
-                        <div>
-                            <img src="/images/AWS-Certified-Solutions-Architect-Professional_badge.png" alt="AWS-Certified-Solutions-Architect-Professional_badge">
-                            <p>Professional, Amazon Web Services<br>AWS Solutions Architect</p>
-                        </div>
-                        <div>
-                            <img src="/images/AWS Solutions Architect.png" alt="AWS Solutions Architect Badge">
-                            <p>Associate, Amazon Web Services<br>AWS Solutions Architect</p>
-                        </div>
-                        <div>
-                            <img src="/images/AWS-SysOps 1.png" alt="AWS SysOps Administrator Badge">
-                            <p>Associate, Amazon Web Services<br>AWS SysOps Administrator</p>
-                        </div>
-                        <div>
-                            <img src="/images/image 1.png" alt="FinOps Professional Badge">
-                            <p>The Linux Association<br>Certified FinOps Professional</p>
-                        </div>
-                        <div>
-                            <img src="/images/logo_cka_whitetext-300x293 1.png" alt="Kubernetes Administrator Badge">
-                            <p>The Linux Association<br>Certified Kubernetes Administrator</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Single modal overlay -->
+<div id="modal-overlay" class="modal-overlay">
+    <div class="modal-content">
+        <!-- Close button (X) -->
+        <button class="close-btn" onclick="closeModal()">&times;</button>
 
-            <div class="cpo">
-                <img src="/images/CPF.png" alt="Miss Piggy">
-                <div class="wow">
-                    <div>
-                        <h4>Chief Pet Officer</h4>
-                        <h2>Miss Piggy</h2>
-                    </div>
-                    <p>Meet Miss Piggy, our resident Holland Lop and undisputed star of the office! At 3.5 years young, this fluffy bundle of joy takes her role as Chief Pet Officer very seriously—whether that means hopping into meetings, charming visitors,
-                        or expertly sniffing out hidden treats. Miss Piggy is a social butterfly who adores making new friends of all species. From wagging tails to curious meows (and even the occasional squawk), she’s got a soft spot for dogs, cats,
-                        and one particularly chatty parrot. With her friendly personality and floppy ears, Miss Piggy makes sure everyone feels welcome—just as long as you don’t forget the snacks! 🥕</p>
-                </div>
-            </div>
+        <!-- This container will be filled with the fetched .html -->
+        <div id="modal-body">
+            <!-- External content will be injected here -->
         </div>
-    </section>
 
-    <section id="testimonials">
-        <div class="container">
-            <div class="heading">
-                <h4>Testimonials</h4>
-                <h2>Experience the FinOps difference, firsthand with finOps experts.</h2>
-            </div>
-            <div class="wow">
-                <div class="testimonial">
-                    <p class="name">C.E.O Zenith Solutions</p>
-                    <p>"Managing our complex cloud infrastructure was a daunting task. FinOps Experts provided us with the tools and expertise to gain visibility into our cloud spending, identify cost-saving opportunities, and optimize our cloud resources.
-                        Their solutions have helped us achieve significant cost savings and improve our overall operational efficiency."</p>
-                    <img src="/images/star.svg" alt="">
-                </div>
-                <div class="testimonial">
-                    <p class="name">Nova Innovations</p>
-                    <p>"As a fast-growing tech startup, we needed a reliable partner to help us manage our cloud costs. FinOps Experts provided us with the insights and tools we needed to optimize our cloud usage and scale our operations. Their team of experts
-                        was always available to answer our questions and provide guidance."</p>
-                    <img src="/images/star.svg" alt="">
-                </div>
-            </div>
-            <h2>Money Back Guarantee.<br>If you’re not happy, we don’t get paid.</h2>
-        </div>
-    </section>
+        <!-- Optional "OK" button at bottom -->
+        <button class="ok-btn" onclick="closeModal()">OK</button>
+    </div>
+</div>
 
-    <section id="faq">
-        <div class="container">
-            <h2>Frequently asked questions</h2>
-
-            <div class="dropdown">
-                <div class="wow drop active" id="drop1">
-                    <div>
-                        <h3>What is FinOps?</h3>
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
-                        </svg>
-                    </div>
-                    <p>FinOps, or Cloud Financial Management, is a collaborative practice that enables organizations to get maximum business value from their cloud investments. It involves bringing together finance, technology, and business teams to make
-                        informed decisions about cloud spending.</p>
-                </div>
-                <div class="wow drop " id="drop2">
-                    <div>
-                        <h3>Why is FinOps Important?</h3>
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
-                            </svg>
-                    </div>
-                    <p>FinOps is crucial for several reasons:</p>
-                    <ul>
-                        <li>Cost Optimization: It helps identify and eliminate unnecessary cloud spending, leading to significant cost savings.</li>
-                        <li>Improved Operational Efficiency: It streamlines cloud financial management processes, reducing manual effort and improving accuracy.</li>
-                        <li> Enhanced Visibility and Control: It provides real-time insights into cloud usage and costs, enabling organizations to make informed decisions.</li>
-                        <li> Accelerated Innovation: By optimizing costs and improving efficiency, FinOps frees up resources to invest in new projects and drive business growth.</li>
-                    </ul>
-                </div>
-                <div class="wow drop" id="drop3">
-                    <div>
-                        <h3>Who Should Be Involved in FinOps?</h3>
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
-                        </svg>
-                    </div>
-                    <p>A successful FinOps practice requires collaboration between various teams, including:</p>
-                    <ul>
-                        <li>Finance: Responsible for budgeting, forecasting, and cost allocation.</li>
-                        <li>Technology: Responsible for cloud infrastructure, operations, and engineering.</li>
-                        <li>Business: Responsible for setting business objectives and priorities.</li>
-                    </ul>
-                </div>
-                <div class="wow drop" id="drop4">
-                    <div>
-                        <h3>What are the Key Principles of FinOps?</h3>
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
-                        </svg>
-                    </div>
-                    <p>FinOps is crucial for several reasons:</p>
-                    <ul>
-                        <li>Collaboration: Foster collaboration between finance, technology, and business teams.</li>
-                        <li>Continuous Improvement: Continuously monitor and optimize cloud spending.</li>
-                        <li>Informed Decision Making: Make data-driven decisions based on real-time insights.</li>
-                        <li>Ownership and Accountability: Assign ownership of cloud costs to specific teams or individuals.</li>
-                    </ul>
-                </div>
-                <div class="wow drop" id="drop5">
-                    <div>
-                        <h3>How Can I Get Started with FinOps?</h3>
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
-                        </svg>
-                    </div>
-                    <p>To get started with FinOps, consider the following steps:</p>
-                    <ol>
-                        <li>Assess Your Current Cloud Usage: Understand your current spending patterns and identify areas for optimization.</li>
-                        <li>Establish a FinOps Team: Create a cross-functional team to oversee FinOps initiatives.</li>
-                        <li>Implement Cloud Cost Management Tools: Use tools to track and analyze cloud usage and costs.</li>
-                        <li>Develop a FinOps Culture: Foster a culture of collaboration, transparency, and accountability.</li>
-                        <li>Continuously Monitor and Optimize: Regularly review cloud spending and implement improvements.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <img class="logo" src="/images/logo.png" alt="logo">
-            <div id="zf_div_0_sU0byohmht4_6egronBHbAfXNd3WHMBJHhfdrC7jI"></div>
-
-            <div class="wow">
-                <p>You can also reach out to us directly.</p>
-                <p>Sales: sales@finops-experts.com<br> Support: support@finops-experts.com</p>
-                <p>We look forward to helping you soon!</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Copyright &copy; 2024 FinOps Experts</p>
-            <ul>
-                <li><a href="">Terms Of Service</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Cookie Policy</a></li>
-            </ul>
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <p>Copyright &copy; 2024 FinOps Experts</p>
+        <ul>
+            <li><a href="#" data-file="tos.html" onclick="openModal(event)">Terms Of Service</a></li>
+            <li><a href="#" data-file="privacy.html" onclick="openModal(event)">Privacy Policy</a></li>
+            <li><a href="#" data-file="cookies.html" onclick="openModal(event)">Cookie Policy</a></li>
+        </ul>
+    </div>
+</footer>
 
 
-    <script src="/script.js"></script>
+<script src="/script.js"></script>
 </body>
 
 </html>

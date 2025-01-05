@@ -84,6 +84,46 @@ for (const item of items) {
     observer.observe(item);
 }
 
+//modals
+    /**
+     * openModal(event)
+     * ----------------
+     * 1. Prevent default link behavior.
+     * 2. Get the 'data-file' attribute, which tells us which .html to load.
+     * 3. Fetch that file, then insert the content into #modal-body.
+     * 4. Display the modal.
+     */
+    function openModal(event) {
+      event.preventDefault();
+
+      // Which file to fetch (e.g., "tos.html", "cookies.html", or "privacy.html")
+      const file = event.target.getAttribute('data-file');
+      if (!file) return;
+
+      // Fetch the external HTML
+      fetch(file)
+        .then(response => response.text())
+        .then(htmlContent => {
+          // Put the fetched HTML into #modal-body
+          document.getElementById('modal-body').innerHTML = htmlContent;
+
+          // Show the modal
+          document.getElementById('modal-overlay').style.display = 'block';
+        })
+        .catch(error => {
+          console.error('Error loading modal content:', error);
+          // Optionally handle error or show a message
+        });
+    }
+
+    /**
+     * closeModal()
+     * ------------
+     * Hide the modal overlay.
+     */
+    function closeModal() {
+      document.getElementById('modal-overlay').style.display = 'none';
+    }
 
 
 
