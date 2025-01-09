@@ -6,30 +6,8 @@
 
     <url>
         <loc>https://finops-experts.com/index.html</loc>
-        <lastmod>2025-01-05</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-01-09</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-
-    <url>
-        <loc>https://finops-experts.com/tos.html</loc>
-        <lastmod>2025-01-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://finops-experts.com/privacy.html</loc>
-        <lastmod>2025-01-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://finops-experts.com/cookies.html</loc>
-        <lastmod>2025-01-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
 </urlset>

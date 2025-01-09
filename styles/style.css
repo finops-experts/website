@@ -267,6 +267,12 @@ nav button {
     max-width: 100%;
 }
 
+#sale .sample-report {
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
 #sale button,
 #services button {
     background-color: var(--primary-color);
