@@ -27,21 +27,21 @@ optimization.addEventListener('click', tabOptimization);
 operation.addEventListener('click', tabOperation);
 
 function tabInfo() {
-    document.getElementById('tab-p').innerHTML = "We analyze 40+ AWS services for resource level data<br><br> We roll up this data so you understand not just the EC2 costs for a group of servers, but the volumes and backups as well <br><br> We deliver an Excel or Google Sheets report explaining where you spend your money.";
+    document.getElementById('tab-p').innerHTML = "We analyze 50+ AWS services for resource level cost data<br><br> We use Focus 1.0 Data Exports to scan the millions or billions of charges you receive each month <br><br> We rollup that data across the dimensions you request to be able to see the data as you really need to see it. <br><br> We deliver an Excel or Google Sheets report explaining where you spend your money.";
     info.classList.add('active');
     operation.classList.remove('active');
     optimization.classList.remove('active');
 }
 
 function tabOptimization() {
-    document.getElementById('tab-p').innerHTML = "We use over 50 strategies for saving you money<br><br> We offer options and recommendations for savings with actual dollar amounts<br><br> Should you be paying upfront for EC2 instances? We'll tell you how much it would save.<br><br> Which S3 storage class is best for a bucket? How much will it save?";
+    document.getElementById('tab-p').innerHTML = "With 50+ checks, we go far beyond reserved instances and savings plans.<br><br> We offer recommendations for savings opportunities with actual dollar amounts.<br><br> You add information on level of effort, feasiblity and desireability.<br><br> We help you prioritize your best options for optimizing your cloud costs.";
     info.classList.remove('active');
     operation.classList.remove('active');
     optimization.classList.add('active');
 }
 
 function tabOperation() {
-    document.getElementById('tab-p').innerHTML = "We train all the key stakeholders on the benefits of FinOps<br><br> We help you put the processes in place to continue to save<br><br> We follow up yearly to make sure your costs remain optimized<br><br> We offer ongoing support on your FinOps journey.";
+    document.getElementById('tab-p').innerHTML = "We train all the key stakeholders on their roles and responsibilities within FinOps.<br><br>We help you design a process and KPIs which will guide you in decisions.<br><br>We follow up periodically to make sure your costs remain optimized and your teams energized.<br><br>You begin deploying optimizations and watch your cloud bill shrink.";
     info.classList.remove('active');
     operation.classList.add('active');
     optimization.classList.remove('active');

@@ -17,8 +17,8 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 100%;
+    font-size: 50px;
+    line-height: 120%;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -171,6 +171,10 @@ nav button {
     width: fit-content;
 }
 
+.hero-bg div p {
+    font-size: 20px;
+}
+
 .hero-bg button {
     background-color: var(--secondary-color);
     color: white;
@@ -184,6 +188,7 @@ nav button {
     flex-direction: column;
     border: solid 5px var(--secondary-color);
     border-radius: 20px;
+    font-size: 20px;
 }
 
 #tabs .container .buttons {
@@ -197,7 +202,7 @@ nav button {
     width: 100%;
     background-color: white;
     background-color: #ccd1cd;
-    z-index: 800;
+    z-index: 50;
 }
 
 #tabs path {
@@ -270,7 +275,15 @@ nav button {
 #sale .sample-report {
     font-size: 20px;
     font-weight: 800;
+}
 
+#sale h3 {
+    font-weight: 700;
+}
+
+#sale ul {
+    padding-left: 25px;
+    padding-right: 10px;
 }
 
 #sale button,
@@ -413,10 +426,6 @@ nav button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.founder .certs div:nth-of-type(4) {
-    display: none;
 }
 
 .certs {
